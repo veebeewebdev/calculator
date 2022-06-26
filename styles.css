@@ -1,0 +1,105 @@
+.background-area {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    /* min-height: 200px; */
+}
+
+.border-area {
+    margin: auto;
+    height: 90vh;
+    min-height: 200px;
+    min-width: 131px;
+    /* height: 600px; */
+    width: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    border-radius: 4px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.display {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-grow: 1;
+    border-radius: 4px;
+    font-size: 20vh;
+    line-height: 0em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-grow: 3;
+    gap: 4px;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    /* main-buttons takes up two times the width of the other div in the parent */
+    height: 100%;
+    gap: 4px;
+    /* padding: 0 0 4px 4px; */
+}
+
+.side-buttons {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    gap: 4px;
+    /* padding: 0 4px 4px 0; */
+}
+
+.zero {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 60%;
+    background-color: rgb(12, 200, 233);
+    border-radius: 4px;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.equal {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    /* they each take up 30% of the width - except for zero*/
+    background-color: rgb(12, 200, 233);
+    border-radius: 4px;
+}
+
+.divide,
+.multiply,
+.subtract,
+.add {
+    background-color: rgb(226, 43, 180);
+    flex-grow: 1;
+    border-radius: 4px;
+}
