@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap');
+
+body {
+    font-family: Dosis, sans-serif;
+}
+p {
+    margin: 0;
+}
+
 .background-area {
     display: flex;
     /* flex-direction: column; */
@@ -7,7 +16,7 @@
     /* min-height: 200px; */
 }
 
-.border-area {
+.calculator-bezel {
     margin: auto;
     height: 90vh;
     min-height: 200px;
@@ -21,7 +30,7 @@
     border-radius: 4px;
 }
 
-.content {
+.calculator-content {
     display: flex;
     flex-direction: column;
     height: 90%;
@@ -29,77 +38,66 @@
     background-color: white;
     padding: 4px;
     border-radius: 4px;
+    font-size: 5vh;
+    line-height: 0em;
+    font-weight: 900;
+
 }
 
-.display {
+.calculator-display {
     display: flex;
     justify-content: right;
     align-items: center;
     flex-grow: 1;
     border-radius: 4px;
-    font-size: 20vh;
+    font-size: 13vh;
     line-height: 0em;
+    font-weight: 400;
 }
 
-.buttons {
+.calculator-buttons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-grow: 3;
-    gap: 4px;
-}
-
-.main-buttons {
-    display: flex;
-    justify-content: center;
+    flex-grow: 4;
     flex-wrap: wrap;
-    flex-grow: 2;
-    /* main-buttons takes up two times the width of the other div in the parent */
-    height: 100%;
     gap: 4px;
-    /* padding: 0 0 4px 4px; */
 }
 
-.side-buttons {
+.square-button,
+.number-button {
     display: flex;
-    flex-direction: column;
-    /* height: 100%; */
+    justify-content: center;
+    align-items: center;
+
     flex-grow: 1;
-    flex-shrink: 1;
-    gap: 4px;
-    /* padding: 0 4px 4px 0; */
+    /* flex-shrink: 1; */
+    flex-basis: 20%;
+    background-color: rgb(12, 200, 233);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+    /* padding-top: 20%; */
+    /* box-sizing: border-box; */
+
 }
 
 .zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-grow: 2;
-    flex-shrink: 1;
-    flex-basis: 60%;
+    color: white;
+    /* flex-shrink: 0; */
+    flex-basis: 41%;
     background-color: rgb(12, 200, 233);
     border-radius: 4px;
+    text-align: center;
 }
 
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.equal {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 30%;
-    /* they each take up 30% of the width - except for zero*/
-    background-color: rgb(12, 200, 233);
-    border-radius: 4px;
-}
-
-.divide,
-.multiply,
-.subtract,
-.add {
+.operator-button {
     background-color: rgb(226, 43, 180);
-    flex-grow: 1;
-    border-radius: 4px;
+    /* flex-shrink: 2; */
+    /* flex-grow: .5; */
+
 }
