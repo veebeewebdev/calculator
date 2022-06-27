@@ -3,6 +3,7 @@
 body {
     font-family: Dosis, sans-serif;
 }
+
 p {
     margin: 0;
 }
@@ -22,7 +23,7 @@ p {
     min-height: 200px;
     min-width: 131px;
     /* height: 600px; */
-    width: 70vh;
+    width: 72vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,4 +101,13 @@ p {
     /* flex-shrink: 2; */
     /* flex-grow: .5; */
 
+}
+
+.btn:hover
+/* .square-button:target,
+.operator-button:target,
+.zero:target,
+.number-button:target  */
+{
+    transform: scale(1.05);
 }
